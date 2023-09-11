@@ -38,7 +38,7 @@ Build a PHP calculator named simple_calculator.php that performs basic arithmeti
 
 ## How to Start
 
-1. Eensure PHP is installed.
+1. Ensure PHP is installed.
 2. Clone this Repo.
 3. Open a terminal or command prompt and navigate to the directory.
 4. Use the command `php -S localhost:8000` to start PHP's built-in web server, specifying a port like 8000. Access the PHP files in a web browser using http://localhost:8000/.
