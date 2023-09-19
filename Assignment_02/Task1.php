@@ -10,7 +10,7 @@ function isEven($number) {
     return $number % 2 == 0;
 }
 
-function printEvenNumbers($start, $end, $step){
+function printEvenNumbersUsingForLoop($start, $end, $step){
     for($i = $start; $i <= $end; $i += $step){
         if(isEven($i)) {
             echo $i . " ";
@@ -19,5 +19,29 @@ function printEvenNumbers($start, $end, $step){
     echo PHP_EOL;
 }
 
+function printEvenNumbersUsingWhileLoop($start, $end, $step) {
+    $i = $start;
+    while($i <= $end) {
+        if(isEven($i)) {
+            echo $i . " ";
+        }
+        $i += $step;
+    }
+    echo PHP_EOL;
+}
+
+function printEvenNumbersUsingDoWhileLoop($start, $end, $step) {
+    $i = $start;
+    do {
+        if(isEven($i)) {
+            echo $i . " ";
+        }
+        $i += $step;
+    } while($i <= $end);
+    echo PHP_EOL;
+}
+
 // Initiating start = 2, end = 20, step = 2. Start = 1 with Step = 2 wouldn't yeild the desired result.
-printEvenNumbers(2, 20, 2);
+printEvenNumbersUsingForLoop(2, 20, 2);
+printEvenNumbersUsingWhileLoop(2, 20, 2);
+printEvenNumbersUsingDoWhileLoop(2, 20, 2);
