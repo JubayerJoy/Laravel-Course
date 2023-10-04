@@ -44,8 +44,7 @@ $product = new Product(1, 'T-shirt', 19.99);
 $product->showDetails();
 ```
 
-
-Expected Output:
+## Expected Output:
 
 ```php
 Product Details:
